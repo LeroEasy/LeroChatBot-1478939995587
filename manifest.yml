@@ -1,0 +1,12 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: LeroChatBot
+  host: LeroChatBot
+  disk_quota: 1024M
+  services:
+  - Conversation-ChatBot
+  - Speech to Text-ChatBot
+  - Text to Speech-ChatBot
